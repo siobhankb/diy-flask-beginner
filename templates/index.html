@@ -19,19 +19,25 @@
   <body>
     
 
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+<div class="card">
   <div class="card-body">
     <h5 class="card-title">This is a page. Welcome, people of the internet, to this page.</h5>
     <p class="card-text">
-        <h4>My favorite 'grown-up' books:</h4>
-            <ul>
-            {% for book in adult_books %}
+        <h4 class="secondary">My favorite 'grown-up' books:</h4>
+        <ul>
+        {% for book in adult_books %}
             <li>{{ book }}</li>
-            {% endif %} {% endfor %}
+        {% endfor %}
+        </ul>
+    </p>
+    <p class="card-text">
+        <h4 class='info'>My favorite 'youngster' books:</h4>
+            <ul>
+            {% for book in kid_books %}
+            <li>{{ book }}</li>
+            {% endfor %}
             </ul>
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
