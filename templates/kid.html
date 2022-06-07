@@ -20,13 +20,13 @@
     
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">This is another route template.</h5>
+    <h4 class="card-title">This is another route template.</h5>
     <p class="card-text">
-        <h4 class='info'>My favorite 'youngster' books:</h4>
-            <ul>
-            {% for book in kid_books %}
-            <li>{{ book }}</li>
-            {% endfor %}
+      <h5 class='info'>My favorite children's books:</h4>
+            <ul class="list-group">
+                {% for book in kid_books %}
+                    <li class="list-group-item {{ book.background }}">{{ book.name }}</li>
+                {% endfor %}
             </ul>
     </p>
   </div>

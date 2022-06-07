@@ -9,5 +9,11 @@ def index():
 
 @app.route("/kid")
 def other():    
-    kid_books = ["It's a Book!", "In a Jar", "I Talk Like a River", "The Paper Bag Princess", "The Van Gogh Cafe"]
+    kid_books = [
+        {'name': "It's a Book!", 'background':'bg-primary'},
+        {'name': "In a Jar", 'background':'bg-white'},
+        {'name': "I Talk Like a River", 'background':'bg-info'},
+        {'name': "The Paper Bag Princess", 'background':'bg-secondary'},
+        {'name': "The Van Gogh Cafe", 'background':'bg-warning'}
+        ]
     return render_template('kid.html', kid_books=kid_books)
